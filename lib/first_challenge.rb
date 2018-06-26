@@ -15,10 +15,7 @@ def first_challenge
 
   #your code here
   index = 0
-  while index < contacts["Freddy Mercury"][favorite_icecream_flavors].length
- 
-    index+=1
-  end
+
   contacts.each do |person, data|
     if data == "Freddy Mercury"
       data.each do |attribute,value|
