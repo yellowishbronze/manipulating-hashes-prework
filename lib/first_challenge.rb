@@ -16,9 +16,21 @@ def first_challenge
   #your code here
   index = 0
   while index < contacts["Freddy Mercury"][favorite_icecream_flavors].length
-    first_challenge["Freddy Mercury"][:favorite_icecream_flavors][index].delete_if first_challenge["Freddy Mercury"][:favorite_icecream_flavors][index] == "strawberry"
+ 
     index+=1
   end
+  contacts.each do |person, data|
+    if data == "Freddy Mercury"
+      data.each do |attribute,value|
+        if attribute == :favorite_icecream_flavors
+          value.each do |flavor|
+            flavor.delete_if{flavor == "strawberry"
+          end
+        end
+      end
+    end
+  
+  
   #remember to return your newly altered contacts hash!
   contacts
 end
