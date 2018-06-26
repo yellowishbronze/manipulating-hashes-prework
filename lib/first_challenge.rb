@@ -17,7 +17,7 @@ def first_challenge
   index = 0
   while index < 
 contacts["Freddy Mercury"][favorite_icecream_flavors]
-
+first_challenge["Freddy Mercury"][:favorite_icecream_flavors][0]
   #remember to return your newly altered contacts hash!
   contacts
 end
