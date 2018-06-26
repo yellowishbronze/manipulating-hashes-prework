@@ -14,7 +14,6 @@ def first_challenge
   }
 
   #your code here
-  index = 0
 
   contacts.each do |person, data|
     if data == "Freddy Mercury"
